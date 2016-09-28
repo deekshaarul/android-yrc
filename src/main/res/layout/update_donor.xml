@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollupdate"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+<LinearLayout
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+<EditText
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="30dp"
+    android:hint="Donor Phone No"
+    android:id="@+id/donor_phno"
+    android:textSize="20dp"/>
+
+
+
+
+    <EditText
+        android:layout_margin="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Last Donated"
+        android:textSize="20dp"
+        android:focusable="false"
+        android:id="@+id/d_date"
+         />
+
+    <Button
+
+    android:layout_height="wrap_content"
+    android:text="Update"
+    android:id="@+id/update"
+        android:layout_margin="30dp"
+        android:background="@drawable/button"
+        android:textColor="#FFF"
+        android:layout_width="120dp"
+    android:layout_gravity="center"/>
+</LinearLayout>
+    </ScrollView>

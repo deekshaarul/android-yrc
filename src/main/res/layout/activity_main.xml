@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroll"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg">
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:layout_width="200dip"
+        android:layout_height="180dip"
+        android:id="@+id/icon"
+        android:background="@mipmap/blood"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="25dp"
+        />
+
+    <EditText
+        android:layout_width="275dp"
+        android:layout_height="50dp"
+        android:hint="Username"
+        android:id="@+id/usr"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="80px"
+        android:background="@drawable/roundt"
+        />
+
+    <EditText
+        android:layout_width="275dp"
+        android:layout_height="50dp"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/pass"
+        android:hint="Password"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/roundt"
+        android:layout_gravity="center_horizontal" />
+    <CheckBox
+        android:id="@+id/cbShowPwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_marginLeft="48dp"
+        android:layout_marginTop="9dp"
+        android:text="Show Password"
+        android:layout_weight="0" />
+
+    <Button
+        android:layout_width="275dp"
+        android:layout_height="70dp"
+        android:text="Login"
+        android:fontFamily="roboto bold"
+
+        android:id="@+id/l"
+        android:textSize="20dp"
+        android:layout_gravity="center_horizontal"
+
+        android:layout_marginTop="25dp"
+        android:background="@drawable/button"/>
+
+</LinearLayout>
+
+    </ScrollView>

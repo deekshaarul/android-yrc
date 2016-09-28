@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollview"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Patient Information"
+        android:textSize="24sp"
+        android:textColor="@color/colorAccent"/>
+    <LinearLayout
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:inputType="textPersonName"
+        android:hint="Name"
+
+        android:ems="10"
+        android:id="@+id/pname" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Age"
+        android:layout_marginTop="10dp"
+
+        android:ems="10"
+        android:id="@+id/age" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:hint="Phone No"
+
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:id="@+id/phno"
+        android:layout_gravity="center_horizontal" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Disease / Surgery"
+
+        android:id="@+id/reason" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="No of Units"
+        android:layout_marginTop="10dp"
+
+        android:ems="10"
+        android:id="@+id/units" />
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Last Date"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:focusable="false"
+        android:id="@+id/date"
+        android:layout_gravity="center_horizontal" />
+
+
+
+
+    <RadioGroup
+        android:id="@+id/dona"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/b"
+            android:text="@string/Blood"
+            android:textSize="18sp"
+            />
+        <RadioButton
+            android:layout_marginLeft="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/p"
+            android:text="@string/Platelet"
+            android:textSize="18sp"
+            />
+
+    </RadioGroup>
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="20dp"
+       android:textSize="18sp"
+       android:layout_marginTop="10dp"
+       android:text="Blood Group"/>
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:id="@+id/spinner"
+        android:layout_gravity="center_horizontal" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:text="Handled By"
+        android:textColor="@color/colorAccent"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Name"
+        android:layout_marginTop="10dp"
+
+        android:ems="10"
+        android:id="@+id/hname" />
+
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="Add Request"
+        android:layout_marginTop="10dp"
+        android:id="@+id/addReq"
+        android:background="@drawable/button"
+        android:textColor="#FFF"
+        android:layout_gravity="right" />
+    </LinearLayout>
+
+
+</LinearLayout>
+    </ScrollView>

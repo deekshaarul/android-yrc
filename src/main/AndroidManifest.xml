@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.yrcvit.bdassist">
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/blood"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+
+        <activity
+            android:name=".MainActivity"
+            android:label="Current Requests"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name=".Login"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".AddRequest"
+            android:label="Add Request"
+            android:theme="@style/AppTheme"
+            android:parentActivityName=".MainActivity"
+            android:noHistory="true">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"
+                />
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name=".DonorMain"
+            android:label="Donors"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name=".MatchDonor"
+            android:label="Match Donor"
+            android:theme="@style/AppTheme"
+            android:parentActivityName=".DonorMain"
+            android:noHistory="true">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".DonorMain"
+                />
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name=".UpdateDonor"
+            android:label="Update Donor"
+            android:theme="@style/AppTheme"
+            android:parentActivityName=".DonorMain"
+            android:noHistory="true">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".DonorMain"
+                />
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name=".Completed"
+            android:label="Completed Requests"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+          </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name=".Email"
+            android:label="Share"
+            android:theme="@style/AppTheme"
+            android:parentActivityName=".MainActivity"
+            android:noHistory="true">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"
+                />
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+
+
+    </application>
+
+</manifest>

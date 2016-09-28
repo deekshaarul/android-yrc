@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_req"
+            android:icon="@mipmap/request_icon"
+            android:title="Requests" />
+        <item
+            android:id="@+id/nav_donor"
+            android:icon="@mipmap/donor_icon"
+            android:title="Donors " />
+        <item
+            android:id="@+id/nav_comp"
+            
+            android:icon="@mipmap/completed_icon"
+            android:title="Completed" />
+
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+
+        </menu>
+    </item>
+
+</menu>
